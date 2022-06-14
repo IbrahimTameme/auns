@@ -48,12 +48,9 @@ img {
 
 
 
-<div class="container p-5 d-flex flex-row justify-content-around flex-wrap">
-    
-  
-    
+<div class="container p-5">
+    <div class="d-flex flex-row justify-content-around flex-wrap">
   @foreach($view2 as $data) 
-  <div class="d-flex flex-row justify-content-around flex-wrap">
   <div class="card mt-5">
         
 
@@ -71,16 +68,13 @@ img {
             <div class="mt-3"style="text-align:center">Time_Needed :{{$data->    time_needed}}</div>
 
         </div>
-        <a href="accept_request/id/{{Auth::user()->id}}/{{$data->elder_id}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Accept</a>
-        </div>
-</div>
+        <p><button>Contact</button></p>
 </div>
 
-</div>
-</div>
+
 @endforeach
 
-
-
+</div>
+</div>
 </div>
 @endsection

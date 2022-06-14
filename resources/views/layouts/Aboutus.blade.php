@@ -34,13 +34,13 @@
                     <div class="about-tab">
                         <ul class="nav nav-pills nav-justified">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                                <a class="nav-link active" data-toggle="pill" href="#tab-content-1" >About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-2" style="color:gray">Mission</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-3" style="color:gray">Vision</a>
                             </li>
                         </ul>
 
