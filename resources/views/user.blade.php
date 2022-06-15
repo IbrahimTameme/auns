@@ -45,11 +45,11 @@
     display: none;
 }
   </style>
-<div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+<div class="page-header"style="background-image: url('https://www.nehhc.com/wp-content/uploads/2016/11/ThinkstockPhotos-578806154.jpg%27');
+ padding: 90px 0 40px 0;"  >
             <div class="container" >
                 <div class="row">
                     <div class="col-12">
-                        <h2>Volunteer Page</h2>
                     </div>
                     <div class="col-12">
                     <h1 class="page_title">Volunteer Page</h1>
@@ -57,6 +57,12 @@
                 </div>
 </div>
 </div>
+
+@if (session('accepted'))
+        <div class="alert alert-success" role="alert">
+            {{ session('accepted') }}
+        </div>
+    @endif
 <div class="container ">
     <div class="main-body">
     
@@ -168,7 +174,7 @@
               <div class="card mb-3">
                 <div class="card-body">
                   <div class="card-header active_vol_header">
-                    Your active Volunteer
+                    Your Active Mission
                   </div>
                   <div class="row">
                     <div class="col-sm-3">
@@ -217,7 +223,7 @@
                   <hr>
                   <div class="row">
                     <div class="col-sm-12">
-                      <a class="btn btn-info " target="__blank" href="delete_job/id/{{Auth::user()->id}}">delete job</a>
+                      <a class="btn btn-info "  href="delete_job/id/{{Auth::user()->id}}">delete job</a>
                     </div>
                   </div>
                 </div>

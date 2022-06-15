@@ -9,7 +9,7 @@
                 <div class="owl-carousel">
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="{{asset('img/carousel-1.jpg')}}" alt="Image">
+                            <img src="{{asset('img/carousel-1.jpg')}}" alt="Image" height="300px">
                         </div>
                         <div class="carousel-text">
                             <h1>Let's be kind for <br> elderly with AUNS</h1> <br><br>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="{{asset('img/carousel-2.jpg')}}" alt="Image">
+                            <img src="{{asset('img/carousel-2.jpg')}}" alt="Image" height="300px">
                         </div>
                         <div class="carousel-text">
                             <h1>Get Involved with a helping hand with AUNS</h1> <br><br>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="img/carousel-3.jpg" alt="Image">
+                            <img src="img/carousel-3.jpg" alt="Image" height="300px">
                         </div>
                         <div class="carousel-text">
                             <h1>Bringing smiles to others with AUNS</h1> <br><br>
@@ -77,7 +77,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="about-img" data-parallax="scroll" data-image-src="{{asset('img/IMG_8848.jpg')}}"></div>
+                        <div class="about-img" data-parallax="scroll" data-image-src="{{asset('img/land.jpg')}}"></div>
                     </div>
                     <div class="col-lg-6">
                         <div class="section-header">
@@ -121,7 +121,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     <p>What We Do?</p>
-                    <h2>We believe that we can make a difference in elderly life with you</h2>
+                    <h2>We believe that we can make a difference in elderly life </h2>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6">
@@ -264,9 +264,9 @@
                             <img src="{{asset('img/event.jpeg')}}" alt="Image" height="300px">
                             <div class="event-content">
                                 <div class="event-meta">
-                                    <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                                    <p><i class="fa fa-calendar-alt"></i>01-Augest-2022</p>
                                     <p><i class="far fa-clock"></i>8:00 - 10:00</p>
-                                    <p><i class="fa fa-map-marker-alt"></i>New York</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Aqaba</p>
                                 </div>
                                 <div class="event-text">
                                     <h3>Body & Mind Activities</h3>
@@ -283,9 +283,9 @@
                             <img src="{{asset('img/event1.jpeg')}}" alt="Image" height="300px">
                             <div class="event-content">
                                 <div class="event-meta">
-                                    <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
+                                    <p><i class="fa fa-calendar-alt"></i>01-July-2022</p>
                                     <p><i class="far fa-clock"></i>8:00 - 10:00</p>
-                                    <p><i class="fa fa-map-marker-alt"></i>New York</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>Amman</p>
                                 </div>
                                 <div class="event-text">
                                     <h3>Creative Activities</h3>

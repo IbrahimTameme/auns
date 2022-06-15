@@ -58,18 +58,18 @@ html, body, .container-table {
 @section('contant')
 
  <!-- Page Header Start -->
- <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
-        <div class="container" >
-            <div class="row">
-                <div class="col-12">
-                   
-                </div>
-                <div class="col-12">
-                    <a style="color:#008E89;">Apply</a>
-                </div>
+ <div class="page-header"style="background-image: url('https://www.nehhc.com/wp-content/uploads/2016/11/ThinkstockPhotos-578806154.jpg%27'); padding: 90px 0 40px 0;"  >
+    <div class="container" >
+        <div class="row">
+            <div class="col-12">
+               
             </div>
-    </div>
-    </div>
+            <div class="col-12">
+                <h1 class="page_title">Submit Elder Request</h1>
+            </div>
+        </div>
+</div>
+</div>        
     <!-- Page Header End -->
 
 
@@ -101,7 +101,7 @@ html, body, .container-table {
 
           </div>
           <div class="card-body p-4 p-sm-3"><br>
-            <h5 class="card-title text-center mb-5 fw-light fs-5">{{ __('Apply For Our Service') }}</h5>
+            <!-- <h5 class="card-title text-center mb-5 fw-light fs-5">{{ __('Apply For Our Service') }}</h5> -->
             <form method="post" action="{{url('request')}}">
                         @csrf
                         <div class="row mb-6">

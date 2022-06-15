@@ -168,7 +168,7 @@ public function accept_request($user_id , $elder_id)
 {
 
   DB::update('update elders set volunteer_id = ? , job_taken=? where elder_id = ?', [$user_id,1,$elder_id]);
-      return redirect('show_request')->with('message','The data has been updated successfully');
+      return redirect('home')->with('accepted','The Mission has been accepted successfully');
   
 
   // $data = elders::where('elder_id',$elder_id);

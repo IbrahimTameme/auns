@@ -26,10 +26,7 @@
         <!-- Template Stylesheet -->
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
         <style>
-            .carousel .carousel-img::after , .facts
-            {
-                background: rgba(0, 0, 0, 0.648);
-            }
+           
 
             .navbar.nav-sticky
             {
@@ -43,12 +40,13 @@
 
             .page_title
 {
+    margin-top: 10%;
     font-weight: bolder;
-    color: white;
+    color: #008E89;
 }
 .nav_bar_margin
 {
-    margin-left: 30%;
+    margin-left: 20%;
 
 }
 @media only screen and (max-width: 800px)
@@ -85,13 +83,15 @@
             
             <div class="container-fluid">
                 <img src="{{asset('img/logo2.png')}}" height="80px" width="70px" alt="logo" style="margin:10px">
+                
               <div class="row d-flex justify-content-end nav_bar_margin">
                        <a class="nav-item nav-link nav_buttons" href="/">Home</a>
-                        <a href="/About" class="nav-item nav-link">About</a>
+                       <a href="request" class="nav-item nav-link">Apply</a>
+                        <a href="/About" class="nav-item nav-link">About Us</a>
                         <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
-                        <a href="/Contactus" class="nav-item nav-link">Contact</a>
+                        <a href="/Contactus" class="nav-item nav-link">Contact Us</a>
                         <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
-                        <a href="request" class="nav-item nav-link">Apply</a>
+                       
 </div>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -123,13 +123,14 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a href="/home" class="nav-item nav-link" style="color:black">Account</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-                                    <a href="/home" class="nav-item nav-link" style="color:black">Account</a>
-                                    <a href="/show_request" class="nav-item nav-link" style="color:black">Start</a>
+                            
+                                   
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf

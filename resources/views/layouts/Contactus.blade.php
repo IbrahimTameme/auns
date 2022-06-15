@@ -2,11 +2,11 @@
 @section('contant')
 
 <!-- Page Header Start -->
-<div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+<div class="page-header"style="background-image: url('https://www.nehhc.com/wp-content/uploads/2016/11/ThinkstockPhotos-578806154.jpg%27'); padding: 90px 0 40px 0;"  >
     <div class="container" >
         <div class="row">
             <div class="col-12">
-                <h2>Contactus</h2>
+              
             </div>
             <div class="col-12">
             <h1 class="page_title">Contact Us</h1>
@@ -18,6 +18,11 @@
 
 
 <!-- Contact Start -->
+@if (session('contact'))
+        <div class="alert alert-success" role="alert">
+            {{ session('contact') }}
+        </div>
+    @endif
 <div class="contact">
     <div class="container">
         <div class="section-header text-center">
@@ -26,6 +31,7 @@
         <div class="contact-img">
             <img src="https://www.ciquk.org/wp-content/uploads/2017/09/W7-DIPLOMA-IN-ELDERLY-CARE.jpg" alt="Image">
         </div>
+    
         <div class="contact-form">
                 <div id="success"></div>
                 <form action="/contacts" method="post"  name="sentMessage" id="contactForm" novalidate="novalidate">
@@ -49,6 +55,9 @@
                     <div>
                         <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
                     </div>
+                    <div class=" mt-3 text-dark px-3" style="font-size: 30px">
+ 
+</div>
                 </form>
             </div>
     </div>

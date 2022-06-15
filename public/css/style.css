@@ -308,8 +308,8 @@ a:focus {
         width: 100%;
         
         padding: 0px 60px;
-        background: transparent !important;
-        border-bottom: 1px solid #008e89c3;
+        background: #00040415 !important;
+        
         z-index: 9;
     }
     
@@ -397,8 +397,7 @@ a:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgb(0, 0,0, 0.5)
-;
+    background: rgb(0, 0,0, 0.5);
     z-index: 1;
 }
 
@@ -435,6 +434,7 @@ a:focus {
 
 .carousel .carousel-btn .btn.btn-custom {
     color: #ffffff;
+    background-color: #008E89;
 }
 
 .carousel .carousel-btn .btn.btn-custom:hover {
@@ -2099,7 +2099,8 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    padding-top: 90px;
+    padding-top: 45px;
+    
     background: #20212B;
 }
 

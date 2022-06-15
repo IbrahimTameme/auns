@@ -4,14 +4,14 @@
 
     
     <!-- Page Header Start -->
-    <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+    <div class="page-header"style="background-image: url('https://www.nehhc.com/wp-content/uploads/2016/11/ThinkstockPhotos-578806154.jpg%27'); padding: 90px 0 40px 0;"  >
         <div class="container" >
             <div class="row">
                 <div class="col-12">
-                    <h2>Aboutus</h2>
+                   
                 </div>
                 <div class="col-12">
-                    <h1 class="page_title">Aboutus</h1>
+                    <h1 class="page_title">About Us</h1>
                 </div>
             </div>
     </div>

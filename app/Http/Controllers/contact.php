@@ -29,7 +29,7 @@ public function contacts(Request $request){
     $create->subject=$request->input('subject');
     $create->message=$request->input('message');
     $create->save();
-    return redirect('contact')->with('message','The data has been added successfully');
+    return redirect('contact')->with('contact','Thank you For Your comment, We will contact with you soon');
  }
 }
 

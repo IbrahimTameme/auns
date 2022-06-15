@@ -31,6 +31,7 @@ class CreateUsersTable extends Migration
             $table->dateTime('timeTo')->nullable();
             $table->string('car')->nullable();
             $table->boolean('is_accepted')->default('0');
+            $table->boolean('is_admin')->default('0');
             $table->boolean('is_deleted')->default('0');
             $table->boolean('job_taken')->default('0');
             $table->integer('volunteer_id')->nullable();

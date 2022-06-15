@@ -13,18 +13,9 @@
                             
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-6">
-                        <div class="footer-link">
-                            <h2>Popular Links</h2>
-                            <a href="/">Home</a>
-                            <a href="/About">Aboutus</a>
-                            <a href="/Contactus">Contactus</a>
-                            <a href="/login">Login</a>
-                            
-                        </div>
-                    </div>
+
                     
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="footer-contact">
                             <h2>Our Head Office</h2>
                             <p><i class="fa fa-map-marker-alt"></i>123 Street, Aqaba, Jordan</p>
@@ -40,6 +31,18 @@
                             
                         </div>
                     </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-link">
+                            <h2>Popular Links</h2>
+                            <a href="/">Home</a>
+                            <a href="/About">Aboutus</a>
+                            <a href="/Contactus">Contactus</a>
+                            <a href="/login">Login</a>
+                            
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
           
