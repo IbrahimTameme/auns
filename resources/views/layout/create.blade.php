@@ -21,7 +21,7 @@
 <body>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
             <div class="card">
                 <div class="card-header">  <h4 style="text-align:center; color:white"> ADD USER </h4>
                 </div>
@@ -29,7 +29,7 @@
                     
                     <form  action="{{url('create')}}"method="post">
                         @csrf
-                        <div class="row mb-3">
+                        <div class="row ">
                             <div class="col-md-6">
                             <label for="name" class="col-md-4 col-form-label text-md-end">First Name</label>
                                 <input id="name" type="text" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -119,7 +119,7 @@
 
                     <div class="row mb-3">
                         <div class="col-md-6">
-                        <label for="floatingSelect" class="col-md-4 col-form-label text-md-end">Car</label>
+                        <label for="floatingSelect" class="col-md-4 col-form-label text-md-end">Have Car?</label>
                             <select  name="car" id="floatingSelect" aria-label="Floating label select example">
                                 <option selected value="" >Car</option>
                                 <option value="yes">Yes</option>

@@ -78,30 +78,14 @@
                 <h2>Awesome guys behind our charity activities</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="/img/Roaa.jpg" alt="Team Image" width="10%">
-                        </div>
-                        <div class="team-text">
-                            <h2>Roa'a Yaseen</h2>
-                            <p>Founder & CEO</p>
-                            <div class="team-social">
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.linkedin.com/in/ro-a-yaseen-58076696/"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/roayas/laravelProject6"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
                             <img src="/img/samar.jpg" alt="Team Image">
                         </div>
                         <div class="team-text">
                             <h2>Samar Alkhamis</h2>
-                            <p>Chef Executive</p>
+                            <p>Proudect Owner</p>
                             <div class="team-social">
                                 <a href=""><i class="fab fa-twitter"></i></a>
                                 <a href="https://www.linkedin.com/in/samar-alkhamis-942a92151"><i class="fab fa-linkedin-in"></i></a>
@@ -113,11 +97,28 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
+                            <img src="/img/Roaa.jpg" alt="Team Image" width="10%">
+                        </div>
+                        <div class="team-text">
+                            <h2>Roa'a Yaseen</h2>
+                            <p>Scrum Master</p>
+                            <div class="team-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/ro-a-yaseen-58076696/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/roayas/laravelProject6"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
                             <img src="/img/ibrahem.jpg" alt="Team Image">
                         </div>
                         <div class="team-text">
                             <h2>Ibrahem Al-Tameme</h2>
-                            <p>Chef Advisor</p>
+                            <p>Full Stack Web Devloper</p>
                             <div class="team-social">
                                 <a href=""><i class="fab fa-twitter"></i></a>
                                 <a href="https://www.linkedin.com/in/ibrahim-tameme-52433a209/"><i class="fab fa-linkedin-in"></i></a>
@@ -133,7 +134,7 @@
                         </div>
                         <div class="team-text">
                             <h2>Ghofran Almomani</h2>
-                            <p>Advisor</p>
+                            <p>Full Stack Web Developer</p>
                             <div class="team-social">
                                 <a href=""><i class="fab fa-twitter"></i></a>
                                 <a href="https://www.linkedin.com/in/ghufran-almomani-777b93232/"><i class="fab fa-linkedin-in"></i></a>

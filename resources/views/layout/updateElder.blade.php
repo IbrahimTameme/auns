@@ -27,45 +27,45 @@
                           @csrf
                           @method('PUT')
                               <div class="row mb-3">
-                                <div class="col-md-10">
-                                <label for="name" class="col-md-3  text-md-end">Name</label>
+                                <div class="col-md-12">
+                                <label for="name" class="col-md-5  text-md-end">Name</label>
                                     <input type="text" name="name" value="{{$data->name}}" required autocomplete="name" autofocus>
-                                    <span><label for="name" class="col-md-4  text-md-end">Phone Number</label>
+                                    <span><label for="name" class="col-md-5  text-md-end">Phone Number</label>
                                  <input type="number" name="phone_num" value="{{$data->phone_num}}" required autofocus></span>
                                 </div>
                             </div>
     
                             <div class="row mb-3">
-                              <div class="col-md-10">
-                              <label for="name" class="col-md-3  text-md-end">Needed Services</label>
+                              <div class="col-md-12">
+                              <label for="name" class="col-md-5  text-md-end">Needed Services</label>
                                   <input type="text" name="needed_services" value="{{$data->needed_services}}" required  autofocus>
-                                  <span><label for="name" class="col-md-4  text-md-end">Time Needed</label>
+                                  <span><label for="name" class="col-md-5  text-md-end">Time Needed</label>
                                   <input type="datetime_local" name="time_needed" value="{{$data->time_needed}}" required  autofocus></span>
                               </div>
                           </div>
                             
                             <div class="row mb-3">
-                              <div class="col-md-10">
-                              <label for="name" class="col-md-3  text-md-end">Gender</label>
+                              <div class="col-md-12">
+                              <label for="name" class="col-md-5  text-md-end">Gender</label>
                                   <input type="text" name="gender" value="{{$data->gender}}" required  autofocus>
-                                   <span ><label class="col-md-4  text-md-end ">location</label>
+                                   <span ><label class="col-md-5  text-md-end ">location</label>
                                   <input type="text" name="location" value="{{$data->location}}" required  autofocus></span>
                               </div>
                           </div>
                             <div class="row mb-3">
-                              <div class="col-md-10">
-                              <label for="name" class="col-md-3  text-md-end">Guardian Name</label>
+                              <div class="col-md-12">
+                              <label for="name" class="col-md-5  text-md-end">Guardian Name</label>
                                   <input type="text" name="guardian_name" value="{{$data->guardian_name}}" required autofocus>
-                                  <span><label class="col-md-4 text-md-end">Guardian Relation</label>
+                                  <span><label class="col-md-5 text-md-end">Guardian Relation</label>
                                   <input type="text" name="guardian_relation" value="{{$data->guardian_relation}}" required  autofocus></span>
                               </div>
                           </div>
                            
                             <div class="row mb-3">
-                              <div class="col-md-11">
-                              <label for="name" class="col-md-3  text-md-end">Guardian Id Pic</label>
+                              <div class="col-md-12">
+                              <label for="name" class="col-md-5  text-md-end">Guardian Id Pic</label>
                                   <input type="file" name="guardian_id_pic" value="{{$data->guardian_id_pic}}" required autofocus>
-                                <span><label  class="col-md-2 text-md-end">Is Accepted</label>
+                                <span><label  class="col-md-5 text-md-end">Is Accepted</label>
                                 <input type="text" name="is_accepted" value="{{$data->is_accepted}}" required autocomplete="name" autofocus></span>
                               </div>
                           </div>

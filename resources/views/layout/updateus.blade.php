@@ -27,53 +27,53 @@
                           @csrf
                           @method('PUT')
                               <div class="row mb-3">
-                                <div class="col-md-10">
-                                <label for="name" class="col-md-3  text-md-end">Name</label>
+                                <div class="col-md-12">
+                                <label for="name" class="col-md-5  text-md-end">Name</label>
                                     <input type="text" name="name" value="{{$data->name}}" required autocomplete="name" autofocus>
-                                    <span><label for="name" class="col-md-3  text-md-end">Last Name</label>
-                                 <input type="text" name="lname" value="{{$data->lname}}" required autofocus></span>
+                                    <label for="name" class="col-md-5  text-md-end">Last Name</label>
+                                 <input type="text" name="lname" value="{{$data->lname}}" required autofocus>
                                 </div>
                             </div>
     
                             <div class="row mb-3">
                               <div class="col-md-12">
-                              <label for="name" class="col-md-3  text-md-end">Profile Image</label>
+                              <label for="name" class="col-md-5  text-md-end">Profile Image</label>
                                   <input type="file" name="img" value="{{$data->img}}" required  autofocus>
-                                  <span><label class="col-md-1 text-md-end ">Phone Number</label>
-                                    <input type="number" name="phone" value="{{$data->phone}}" required  autofocus></span>
+                                 <label class="col-md-5 text-md-end ">Phone Number</label>
+                                    <input type="number" name="phone" value="{{$data->phone}}" required  autofocus>
                               </div>
                           </div>
                             
                             <div class="row mb-3">
-                              <div class="col-md-10">
-                                <label for="name" class="col-md-3  text-md-end">Time from</label>
+                              <div class="col-md-12">
+                                <label for="name" class="col-md-5  text-md-end">Time from</label>
                                   <input type="datetime_local" name="time" value="{{$data->time}}" required  autofocus>
-                              <span ><label for="name" class="col-md-3  text-md-end">Time To</label>
+                              <span ><label for="name" class="col-md-5  text-md-end">Time To</label>
                                   <input type="datetime_local" name="timeTo" value="{{$data->timeTo}}" required  autofocus>
                                    </span>
                               </div>
                           </div>
                             <div class="row mb-3">
-                              <div class="col-md-10">
-                              <label for="name" class="col-md-3  text-md-end">Email</label>
+                              <div class="col-md-12">
+                              <label for="name" class="col-md-5  text-md-end">Email</label>
                                   <input type="email" name="email" value="{{$data->email}}" required autofocus>
-                                  <span><label class="col-md-3 text-md-end">Age </label>
+                                  <span><label class="col-md-5 text-md-end">Age </label>
                                   <input type="date" name="age" value="{{$data->age}}" required  autofocus></span>
                               </div>
                           </div>
                           <div class="row mb-3">
-                            <div class="col-md-11">
-                            <label for="name" class="col-md-3  text-md-end">Needed Services</label>
+                            <div class="col-md-12">
+                            <label for="name" class="col-md-5  text-md-end">Needed Services</label>
                                 <input type="text" name="needed_services" value="{{$data->needed_services}}" required autofocus>
-                              <span><label  class="col-md-2 text-md-end">Is Accepted</label>
+                              <span><label  class="col-md-5 text-md-end">Is Accepted</label>
                               <input type="number" name="is_accepted" value="{{$data->is_accepted}}" required autocomplete="name" autofocus></span>
                             </div>
 
                             <div class="row mb-3">
-                              <div class="col-md-10">
-                              <label for="name" class="col-md-2  text-md-end">Front Id Pic</label>
+                              <div class="col-md-12">
+                              <label for="name" class="col-md-5  text-md-end">Front Id Pic</label>
                                   <input type="file" name="front_id_pic" value="{{$data->front_id_pic}}" required autofocus>
-                                <span><label  class="col-md-2 text-md-end">Back Id Pic</label>
+                                <span><label  class="col-md-5 text-md-end">Back Id Pic</label>
                                 <input type="file" name="back_id_pic" value="{{$data->back_id_pic}}" required autocomplete="name" autofocus></span>
                               </div>
                           </div>

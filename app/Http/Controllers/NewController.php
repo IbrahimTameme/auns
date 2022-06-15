@@ -175,7 +175,8 @@ class NewController extends Controller
       }
             
       public function updateElderData(Request $request, $id)
-      {   
+      {  
+         $name= $request->input('name');
          $phone_num=$request->input('phone_num');
          $needed_services=$request->input('needed_services');
          $time_needed=$request->input('time_needed');
@@ -186,7 +187,7 @@ class NewController extends Controller
          $guardian_id_pic=$request->input('guardian_id_pic');
          $is_accepted=$request->input('is_accepted');
 
-         DB::update('update elders set phone_num = ? , needed_services=?,time_needed = ? , gender=?,location = ? , guardian_name=?, guardian_relation=?, guardian_id_pic=?, is_accepted=? where elder_id = ?', [$phone_num,$needed_services,$time_needed,$gender,$location,$guardian_name,$guardian_relation,$guardian_id_pic,$is_accepted,$id]);
+         DB::update('update elders set phone_num = ? , needed_services=?,time_needed = ? , gender=?,location = ? , guardian_name=?, guardian_relation=?, guardian_id_pic=?, is_accepted=?, name=? where elder_id = ?', [$phone_num,$needed_services,$time_needed,$gender,$location,$guardian_name,$guardian_relation,$guardian_id_pic,$is_accepted,$name,$id]);
          return redirect('etable')->with('message','The data has been updated successfully');
    
       }
@@ -216,7 +217,7 @@ class NewController extends Controller
                 $create->timeTo=$request->input('timeTo');
                 $create->car=$request->input('car');
                 $create->save();
-                return redirect('/')->with('messageRej','The data has been add user successfully');
+                return redirect('/Dashbord')->with('messageRej','The data has been add user successfully');
                 }
 
 

@@ -12,7 +12,7 @@
           <p class="mt-2" style="text-align:center">Users who are Waiting to Your Approval</p>
           <hr class="dark horizontal">
           <div class="d-flex ml-5">
-          <a href="{{url('PendingUsers')}}"style="margin-left:25% ; padding-bottom:5%"><button class="btn btn-dark" >Show Pending Users </button></a>
+          <a href="{{url('PendingUsers')}}"style="margin-left:15% ; padding-bottom:5%"><button class="btn btn-dark" >Show Pending Users </button></a>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@
           <p class="mt-2" style="text-align:center">Users who Have Been Aproved </p>
           <hr class="dark horizontal">
           <div class="d-flex ml-5" >
-            <a href="{{url('utable')}}"style="margin-left:25%"><button class="btn btn-dark" >Show Accepted Users </button>
+            <a href="{{url('utable')}}"style="margin-left:15%"><button class="btn btn-dark" >Show Accepted Users </button>
           </div>
         </div>
       </div>

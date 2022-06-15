@@ -12,7 +12,7 @@
           <p class="mt-2" style="text-align:center">Requests Waiting to Your Approval</p>
           <hr class="dark horizontal">
           <div class="d-flex ml-5">
-          <a href="{{url('PendingRequests')}}"style="margin-left:25% ; padding-bottom:5%"><button class="btn btn-dark" >Show Pending Requests</button></a>
+          <a href="{{url('PendingRequests')}}"style="margin-left:15% ; padding-bottom:5%"><button class="btn btn-dark" >Show Pending Requests</button></a>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@
           <p class="mt-2" style="text-align:center">Requests That Have Been Approved </p>
           <hr class="dark horizontal">
           <div class="d-flex ml-5" >
-            <a href="{{url('etable')}}"style="margin-left:25%"><button class="btn btn-dark">Show Accepted Requests</button>
+            <a href="{{url('etable')}}"style="margin-left:15%"><button class="btn btn-dark">Show Accepted Requests</button>
           </div>
         </div>
       </div>

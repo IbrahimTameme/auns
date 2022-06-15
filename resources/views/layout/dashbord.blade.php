@@ -22,7 +22,7 @@ background: #008E89;
             </div>
             <div class="text-end pt-1">
               <p class="text mb-0 text-capitalize ">Contries </p>
-              <h4 class="mb-0 mt-2" style="margin-right:45%">10</h4>
+              <h4 class="mb-0 mt-2" style="margin-right:45%">2</h4>
             </div>
           </div>
           <hr class="dark horizontal my-0">

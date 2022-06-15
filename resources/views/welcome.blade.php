@@ -186,7 +186,7 @@
                             </div>
                             <div class="service-text">
                                 <h3>Social Care</h3>
-                                <p>We make sure that seniors connect with the community around them and can communicate with their loved ones and participate in regular social activities</p>
+                                <p>We make sure that eldry connect with the community around them and can communicate with their loved ones and participate in regular social activities</p>
                             </div>
                         </div>
                     </div>
@@ -209,7 +209,7 @@
                         <div class="facts-item">
                             <i class="flaticon-home"></i>
                             <div class="facts-text">
-                                <h3 class="facts-plus" data-toggle="counter-up">10</h3>
+                                <h3 class="facts-plus" data-toggle="counter-up">2</h3>
                                 <p>Countries</p>
                             </div>
                         </div>
