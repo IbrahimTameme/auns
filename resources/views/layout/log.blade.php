@@ -11,7 +11,7 @@
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
     crossorigin="anonymous"
   />
-    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/style1.css') }}">
     <title>Document</title>
     <style>
       
