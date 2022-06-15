@@ -9,6 +9,7 @@ use App\Models\elders;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Models\auns_numbers;
 
 
 
@@ -36,6 +37,33 @@ public function viewsign(){
 
 
 
+public function landing_page ()
+{
+  $users = DB::table('users')->where('is_accepted', '=', 1)
+  ->get();
+  $users_count = $users->count();
+  /////////////
+  $elders = DB::table('elders')->where('is_accepted', '=', 1)
+  ->get();
+  $elders_count = $elders->count();
+   /////////////
+   $events = DB::table('events')->get();
+   $events_count = $events->count();
+   /////////////////
+   DB::update('update auns_numbers set users_number = ? , elders_number = ? , events_number = ?  where id = 1 ', [$users_count,$elders_count,$events_count]);
+
+
+////////
+   $numbers = DB::table('auns_numbers')
+->where('id',1)
+->get();
+
+
+
+
+return view('welcome',compact('numbers'));
+
+} 
 
 
 
@@ -53,9 +81,11 @@ public function updateuser(Request $request)
   $lname=$request->input('lname');
   $phone=$request->input('phone');
   $email=$request->input('email');
+  $time=$request->input('time');
+  $timeTo=$request->input('timeTo');
   $age=$request->input('age');
   $gender=$request->input('gender');
-  DB::update('update users set name = ? ,lname = ? , phone=?, email=?, age=?, gender=? where id = ?', [$name,$lname,$phone,$email,$age,$gender,$id]);
+  DB::update('update users set name = ? ,lname = ? , phone=?, email=?, age=?, gender=?, time=?, timeTo=? where id = ?', [$name,$lname,$phone,$email,$age,$gender,$time,$timeTo,$id]);
   return redirect('/home')->with('message','The data has been updated successfully');
 
 }
@@ -80,6 +110,7 @@ public function updateuser(Request $request)
     $create=new elders();
     $create->name=$request->input('name');
     $create->age=$request->input('age');
+    $create->img=$request->input('img');
     $create->phone_num=$request->input('phone_num');
     $create->needed_services=$request->input('needed_services');
     $create->time_needed=$request->input('time_needed');
@@ -91,19 +122,39 @@ public function updateuser(Request $request)
     $create->guardian_id_pic=$request->input('guardian_id_pic');
   
     $create->save();
-    return redirect('signup')->with('message','The data has been added successfully');
+    return redirect('/')->with('message','The data has been added successfully');
   }
 
 
   public function show_request()
 {
+  $id = Auth::user()->id;
+    $data = User::find($id);
+ 
+ 
 
-$view2 = DB::table('elders')
+  if( isset($data ->is_accepted) && $data ->is_accepted == 1)
+  {
+
+
+    $view2 = DB::table('elders')
 ->where('job_taken',0)->where('is_accepted',1)
 ->get();
 return view('show_request',compact('view2'));
 
+  }else
+  {
+    return redirect('home')->with('status','you need to be accepted by admin to view this page');
+
+
+
+  }
+
+
+
 }
+
+
 public function request()
 {
 

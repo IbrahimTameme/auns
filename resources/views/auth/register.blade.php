@@ -1,22 +1,31 @@
 <style>
 
 
-    .card-header:first-child {
-        color: white;
-        background:#008E89;
-    
-    }
-    button.btn.btn-primary {
-color: #fff;
-border-color:#008E89;
-background: #008E89;
-    
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
 }
 
-div.card{
-    color: #008E89;
+.card-img-left {
+  width: 45%;
+  /* Link to your background image using in the property below! */
+  background: scroll center url({{asset('img/reg.png')}});
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+
+
+html, body, .container-table {
+    height: 100%;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 
     </style>
@@ -28,29 +37,51 @@ div.card{
 
 @extends('layouts.master')
 @section('contant')
-   <!-- Page Header Start -->
-   <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+
+ <!-- Page Header Start -->
+ <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
         <div class="container" >
             <div class="row">
                 <div class="col-12">
-                    <h2>Register</h2>
+                   
                 </div>
                 <div class="col-12">
-                    <a>Register</a>
+                    <a style="color:#008E89;">Register</a>
                 </div>
             </div>
     </div>
     </div>
     <!-- Page Header End -->
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-xl-12 mx-auto">
+        <div class="card flex-row my-4 border-0 shadow rounded-3 overflow-hidden">
+          <div class="card-img-left d-none d-md-flex">
+          <div class="container container-table">
+          <div class="h-100 d-flex align-items-center justify-content-center">
+  <div style="padding: 30px; color:#000 ; margin-top: -200px;">
+    <h4 style="margin-left: -20px; font-weight: bold;">Join Auns Volunteer Team</h4><br>
+    <div>
+
+    <p >In the service section you would like to volunteer for, there are five services that you can choose from:</p>
+    <ul >
+        <li>Cleaning</li>
+        <li>Transportation: We will help the elderly to reach the places they need to reach</li>
+        <li>Providing needs: We will help the elderly in providing the necessities in their daily lives</li>
+        <li>Personal Hygiene</li>
+        <li>Personal check: We make sure that they engage with the community around them </li>
+    </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+          </div>
+          <div class="card-body p-4 p-sm-3"><br>
+            <h5 class="card-title text-center mb-5 fw-light fs-5">{{ __('Register') }}</h5>
+            <form method="POST" action="{{ route('register') }}" style="padding: 20px;">
                         @csrf
 
                         <div class="row mb-3">
@@ -115,6 +146,15 @@ div.card{
                         </div>
 
 
+                        <div class="row mb-3">
+                            <label for="back_id_pic" class="col-md-4 col-form-label text-md-end">{{ __('Image Porfile') }}</label>
+                        <div class="col-md-6">
+                                <input type="file" class="form-control " name="img" id="imgc" value="{{ old('img') }}">
+
+                            </div>
+                        </div> 
+
+
 
                         <div class="row mb-3">
                             <label for="floatingSelect" class="col-md-4 col-form-label text-md-end">{{ __('Gender') }}</label>
@@ -147,7 +187,7 @@ div.card{
 
                         
                      <div class="row mb-3">
-                            <label for="front_id_pic" class="col-md-4 col-form-label text-md-end">{{ __('Front_Id_Pic') }}</label>
+                            <label for="front_id_pic" class="col-md-4 col-form-label text-md-end">{{ __('Front Id Picture') }}</label>
                         <div class="col-md-6">
                                 <input type="file" class="form-control " name="front_id_pic" id="front_id_pic" value="{{ old('front_id_pic') }}">
 
@@ -156,7 +196,7 @@ div.card{
 
 
                         <div class="row mb-3">
-                            <label for="back_id_pic" class="col-md-4 col-form-label text-md-end">{{ __('Back_Id_Pic') }}</label>
+                            <label for="back_id_pic" class="col-md-4 col-form-label text-md-end">{{ __('Back Id Picture') }}</label>
                         <div class="col-md-6">
                                 <input type="file" class="form-control " name="back_id_pic" id="back_id_pic" value="{{ old('back_id_pic') }}">
 
@@ -164,10 +204,10 @@ div.card{
                         </div> 
 
                         <div class="row mb-3">
-                            <label for="needed_services" class="col-md-4 col-form-label text-md-end">{{ __('service') }}</label>
+                            <label for="needed_services" class="col-md-4 col-form-label text-md-end">{{ __('Service') }}</label>
                         <div class="col-md-6">
-                                  <select  name="needed_services" id="needed_services" aria-label="Floating label select example" required value="{{ old('needed_services') }}">
-                                        <option selected value="" >service</option>
+                                  <select class="form-control"  name="needed_services" id="needed_services" aria-label="Floating label select example" required value="{{ old('needed_services') }}">
+                                        <option selected value="" ></option>
                                         <option value="Cleaning">Cleaning</option>
                                         <option value="Transportation">Transportation</option>
                                         <option value="Provide_needs">Provide_needs</option>
@@ -199,7 +239,7 @@ div.card{
 
 
                         <div class="row mb-3">
-                            <label for="car" class="col-md-4 col-form-label text-md-end">{{ __('Car') }}</label>
+                            <label for="car" class="col-md-4 col-form-label text-md-end">{{ __('Do you have a car?') }}</label>
                         <div class="col-md-6">
                         <select class="form-select form-control" name="car" id="car" value="{{ old('car') }}">
                                 <option selected value="" >Car</option>
@@ -237,15 +277,16 @@ div.card{
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn " style="background-color:#008E89; color:#fff">
                                     {{ __('Register') }}
                                 </button>
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+
 @endsection

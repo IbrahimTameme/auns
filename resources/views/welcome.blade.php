@@ -192,7 +192,7 @@
                     </div>
                     <div class="row d-flex justify-content-center" >
                       
-                    <a class="btn btn-custom btn-play "  href="/login" >Apply For our Serves</a>
+                    <a class="btn btn-custom btn-play "  href="/request" >Apply For our Serves</a>
                     
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                         <div class="facts-item">
                             <i class="flaticon-home"></i>
                             <div class="facts-text">
-                                <h3 class="facts-plus" data-toggle="counter-up">150</h3>
+                                <h3 class="facts-plus" data-toggle="counter-up">10</h3>
                                 <p>Countries</p>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
                         <div class="facts-item">
                             <i class="flaticon-charity"></i>
                             <div class="facts-text">
-                                <h3 class="facts-plus" data-toggle="counter-up">400</h3>
+                                <h3 class="facts-plus" data-toggle="counter-up">{{$numbers[0]->users_number}}</h3>
                                 <p>Volunteers</p>
                             </div>
                         </div>
@@ -227,8 +227,8 @@
                         <div class="facts-item">
                             <i class="flaticon-kindness"></i>
                             <div class="facts-text">
-                                <h3 class="facts-dollar" data-toggle="counter-up">10000</h3>
-                                <p>Our Goal</p>
+                                <h3 class="facts-plus" data-toggle="counter-up">{{$numbers[0]->elders_number}}</h3>
+                                <p>Benefits</p>
                             </div>
                         </div>
                     </div>
@@ -236,8 +236,8 @@
                         <div class="facts-item">
                             <i class="flaticon-donation"></i>
                             <div class="facts-text">
-                                <h3 class="facts-dollar" data-toggle="counter-up">5000</h3>
-                                <p>Raised</p>
+                                <h3 class="facts-plus" data-toggle="counter-up">{{$numbers[0]->events_number}}</h3>
+                                <p>Events</p>
                             </div>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="event-item">
-                            <img src="img/event-1.jpg" alt="Image">
+                            <img src="{{asset('img/event.jpeg')}}" alt="Image" height="300px">
                             <div class="event-content">
                                 <div class="event-meta">
                                     <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
@@ -269,18 +269,18 @@
                                     <p><i class="fa fa-map-marker-alt"></i>New York</p>
                                 </div>
                                 <div class="event-text">
-                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <h3>Body & Mind Activities</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                    Staying active as you age is good for everyone. Browse our variety of body and mind activities that can help you to stay active and have fun!
                                     </p>
-                                    <a class="btn btn-custom" href="">Join Now</a>
+                                   
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="event-item">
-                            <img src="img/event-2.jpg" alt="Image">
+                            <img src="{{asset('img/event1.jpeg')}}" alt="Image" height="300px">
                             <div class="event-content">
                                 <div class="event-meta">
                                     <p><i class="fa fa-calendar-alt"></i>01-Jan-45</p>
@@ -288,11 +288,11 @@
                                     <p><i class="fa fa-map-marker-alt"></i>New York</p>
                                 </div>
                                 <div class="event-text">
-                                    <h3>Lorem ipsum dolor sit</h3>
+                                    <h3>Creative Activities</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                    Creative activities for seniors and the elderly. Activity ideas for the social, mental, and physical wellbeing of older adults.
                                     </p>
-                                    <a class="btn btn-custom" href="">Join Now</a>
+                                   
                                 </div>
                             </div>
                         </div>

@@ -11,7 +11,7 @@
                     <h2>Aboutus</h2>
                 </div>
                 <div class="col-12">
-                    <a>Aboutus</a>
+                    <h1 class="page_title">Aboutus</h1>
                 </div>
             </div>
     </div>
@@ -34,7 +34,7 @@
                     <div class="about-tab">
                         <ul class="nav nav-pills nav-justified">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="pill" href="#tab-content-1" >About</a>
+                                <a class="nav-link active" data-toggle="pill" href="#tab-content-1" style="color:gray" >About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="pill" href="#tab-content-2" style="color:gray">Mission</a>
@@ -113,10 +113,10 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="/img/ebrahem1.jpg" alt="Team Image">
+                            <img src="/img/ibrahem.jpg" alt="Team Image">
                         </div>
                         <div class="team-text">
-                            <h2>Ebrahem Tamimi</h2>
+                            <h2>Ibrahem Al-Tameme</h2>
                             <p>Chef Advisor</p>
                             <div class="team-social">
                                 <a href=""><i class="fab fa-twitter"></i></a>

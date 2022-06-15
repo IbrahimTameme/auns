@@ -7,6 +7,8 @@ body {
     font-weight: 500;
     background: #ffffff;
     font-family: 'Quicksand', sans-serif;
+    
+
 }
 
 h1,
@@ -16,12 +18,14 @@ h4,
 h5, 
 h6 {
     color: #4a4c70;
+    
 }
 
 a {
     color: #fff;
     transition: .3s;
     font-weight: bold;
+    
 }
 
 a:hover,
@@ -225,7 +229,7 @@ a:focus {
 ;
     border-right: 1px solid rgba(255, 255, 255, .3);
 }
-#6b9fc0
+
 
 .top-bar .social a:first-child {
     border-left: 1px solid rgba(255, 255, 255, .3);
@@ -305,7 +309,7 @@ a:focus {
         
         padding: 0px 60px;
         background: transparent !important;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        border-bottom: 1px solid #008e89c3;
         z-index: 9;
     }
     
@@ -374,6 +378,7 @@ a:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .carousel .carousel-img {

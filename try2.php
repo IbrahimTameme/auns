@@ -1,80 +1,108 @@
-@extends('layouts.master')
-@section('title', 'Reqeust order')
-@section('contant')
-
+<!-- <p style=" font-size: small;">In our team of volunteers, we deal with a very sensitive category, so after your application has been reviewed and accepted, be ready for the week-long intensive training.</p> -->
+<!-- <div>
+    <p style=" font-size: small;">In our team of volunteers, we deal with a very sensitive category, so after your application has been reviewed and accepted, be ready for the week-long intensive training.</p>
+    <p style=" font-size: small;">In the service section you would like to volunteer for, there are five services that you can choose from:</p>
+    <ul style=" font-size: small;">
+        <li>Cleaning: In this section, we will help the elderly in cleaning the house and the environment in which they live and practice their daily routine</li>
+        <li>Transportation: In this section, we will help the elderly to reach the places they need to reach, such as: participating in community activities, visiting the doctor, visiting family and friends, etc.</li>
+        <li>Providing needs: in this section, we will help the elderly in providing the necessities in their daily lives, such as: bringing groceries, buying clothes and tools, and any other needs they need</li>
+        <li>Personal Hygiene: In this section, We make sure that the elderly are taken care of in terms of personal hygiene and we help with that</li>
+        <li>Personal check: In this section, we visit the elderly, conduct activities for them, check on them, and make sure that they engage with the community around them.</li>
+    </ul>
+    </div>
+  </div>
+</div>
+</div> -->
 
 
 <style>
 
 
-button:hover, a:hover {
-  opacity: 0.7;
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
 }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #008E89;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+.card-img-left {
+  width: 45%;
+  /* Link to your background image using in the property below! */
+  background: scroll center url({{asset('img/reg.png')}});
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-img {
+
+
+html, body, .container-table {
+    height: 100%;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
     vertical-align: middle;
-    border-style: none;
-    margin: 20px
-
 }
+
 
     </style>
 
-<div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
-    <div class="container" >
-        <div class="row">
-            <div class="col-12">
-                <h2>About Us</h2>
+
+
+
+<link rel="stylesheet" href="">
+
+@extends('layouts.master')
+@section('contant')
+
+ <!-- Page Header Start -->
+ <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
+        <div class="container" >
+            <div class="row">
+                <div class="col-12">
+                   
+                </div>
+                <div class="col-12">
+                    <a style="color:#008E89;">Register</a>
+
+                </div>
             </div>
-            <div class="col-12">
-                <a href="">Volunteer Page</a>
+    </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <section class="sign-in mt-5">
+        <div class="container">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <figure><img src='/img/login.png' alt="sing up image"></figure>
+                </div>
+                <div class="signin-form">
+                    <h2 class="form-title">Login</h2>
+                    <form method="POST" action="{{url('login')}}">
+                        @csrf
+                        <div class="form-group">
+                            <label for="email"><i class="fa fa-user"></i></label>
+                            <input type="email" name="email" id="email" placeholder="email"/><br>
+                         </div>
+                        <div class="form-group">
+                            <label for="your_pass"><i class="fa fa-unlock-alt"></i></label>
+                            <input type="password" name="password" id="your_pass" placeholder="Password"/><br>
+
+                        </div>
+                        @if (session('message'))
+                        <div class="alert alert-danger" role="alert">
+                            {{session('message')}}
+                        </div>
+                    @endif
+                        <div class="form-group form-button">
+                            <button type="submit" name="login" id="signin" class="btn btn-primary btn-block"> login</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-</div>
-</div>
+    </section>
 
-
-
-<div class="container p-5">
-    <div class="d-flex flex-row justify-content-around flex-wrap">
-  @foreach($view2 as $data) 
-  <div class="card mt-5">
-        
-
-        <div class="mt-5">
-            <div>
-                <div style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><img src="https://www.manufacturingusa.com/sites/manufacturingusa.com/files/default.png" width="300px"></div>
-            </div>
-            
-            <div class="mt-3"style="text-align:center"> Name :{{$data->name}}</div>
-            <div class="mt-3"style="text-align:center"> Age :{{$data->age}}</div>
-            <div class="mt-3"style="text-align:center">Gender :{{$data->gender}}</div>
-            <div class="mt-3"style="text-align:center">Location :{{$data->location}}</div>
-            <div class="mt-3"style="text-align:center">Phone :{{$data->phone_num}}</div>
-            <div class="mt-3"style="text-align:center">Needed_Services :{{$data->needed_services}}</div>
-            <div class="mt-3"style="text-align:center">Time_Needed :{{$data->    time_needed}}</div>
-
-        </div>
-        <p><button>Contact</button></p>
-</div>
-
-
-@endforeach
-
-</div>
-</div>
-</div>
 @endsection

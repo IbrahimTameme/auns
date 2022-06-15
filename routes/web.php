@@ -22,9 +22,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',  [TestController::class, 'landing_page']);
 Route::get('/signup', function () {
     return view('sign');
 });

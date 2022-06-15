@@ -83,10 +83,24 @@ class RegisterController extends Controller
             'time' => $data['time'],
             'timeTo' => $data['timeTo'],
             'car' => $data['car'],
+            'img' => $data['img'],
             
 
             
             'password' => Hash::make($data['password']),
         ]);
     }
+    
+
+    protected function authenticated(Request $request, $user)
+          {
+                 if(Auth::user()->is_accepted == '1')
+                  {
+                         return redirect('home');
+                  }
+                 else
+                 {
+                  return redirect()->route('/');
+                }
+         }
 }

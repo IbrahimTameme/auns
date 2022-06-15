@@ -9,7 +9,7 @@
                 <h2>Contactus</h2>
             </div>
             <div class="col-12">
-                <a>Contactus</a>
+            <h1 class="page_title">Contact Us</h1>
             </div>
         </div>
 </div>

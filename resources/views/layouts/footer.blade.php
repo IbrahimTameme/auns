@@ -5,14 +5,15 @@
             <div class="container">
                 <div class="row">
                 <div class="col-lg-4 col-md-6">
-                        <div class="footer-link">
+                        <div class="footer-link row  d-flex flex-column justify-content-center align-items-center">
                             <!-- <h2>Useful Links</h2> -->
-                            <img src="{{asset('img/logo2.png')}}" height="140px" width="120px" alt="logo" style="margin:-15px 10px 10px 0">
-                         <p>It is a long established fact that a reader  ,</p>
+                            <img src="{{asset('img/logo2.png')}}" height="160px" width="140px" alt="logo" style="margin:10px 10px 10px -150px; display:block">
+                            <br>
+                         
                             
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-5 col-md-6">
                         <div class="footer-link">
                             <h2>Popular Links</h2>
                             <a href="/">Home</a>
@@ -23,7 +24,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="footer-contact">
                             <h2>Our Head Office</h2>
                             <p><i class="fa fa-map-marker-alt"></i>123 Street, Aqaba, Jordan</p>

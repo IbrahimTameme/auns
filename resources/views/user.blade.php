@@ -49,10 +49,10 @@
             <div class="container" >
                 <div class="row">
                     <div class="col-12">
-                        <h2>About Us</h2>
+                        <h2>Volunteer Page</h2>
                     </div>
                     <div class="col-12">
-                        <a href="">Volunteer Page</a>
+                    <h1 class="page_title">Volunteer Page</h1>
                     </div>
                 </div>
 </div>
@@ -103,10 +103,20 @@
               <h6 class="mb-0">Phone</h6>
                 <span class="text-secondary">{{  Auth::user()->phone}}</span>
               </li>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+              <h6 class="mb-0">Time From</h6>
+                <span class="text-secondary">{{  Auth::user()->time}}</span>
+              </li>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+              <h6 class="mb-0">Time To</h6>
+                <span class="text-secondary">{{  Auth::user()->timeTo}}</span>
+              </li>
               <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
               <div class="row">
                 <div class="col-sm-12">
-                  <button class="btn btn-info" onclick="show1()" >Edit</button>
+                  <button class="btn " onclick="show1()" style="background-color: #008E89; color:white;" >Edit</button>
                 </div>
               </li>
             </ul>
@@ -133,10 +143,18 @@
               <input type="text" name="phone" value="{{  Auth::user()->phone}}">
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+              <h6 class="mb-0">Time From</h6>
+              <input type="datetime-local" name="time" value="{{  Auth::user()->time}}">
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+              <h6 class="mb-0">Time To</h6>
+              <input type="datetime-local" name="timeTo" value="{{  Auth::user()->timeTo}}">
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
               <div class="row">
                 <div class="col-sm-12">
                  
-                  <button class="btn btn-info" type="submit"> edit</button>
+                  <button class="btn " type="submit" style="background-color: #008E89; color:white;" > edit</button>
                 </div>
               </li>
             </ul>
@@ -211,7 +229,15 @@
                 <div class="card-body no_active">
                   <h5 class="card-title text_no_active">no active jobs</h5>
                   
-                  <a class="btn btn-info " target="__blank" href="show_request">Look for an opportunity </a>
+                  <a class="btn " target="__blank" href="show_request" style="background-color: #008E89; color:white;">Look for an opportunity </a>
+
+                  <div class=" mt-3 text-dark px-3" style="font-size: 20px">
+                    @if (session('status'))
+                        <div class="alert alert-danger" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                </div>
                 </div>
                 </div>
               </div>
@@ -223,7 +249,7 @@
                      <p class="text_no_active">no active jobs</p>
                     <div class="row ">
                  
-                  <a class="btn btn-info " target="__blank" href="show_request">Look for an opportunity </a>
+                  <a class="btn  " target="__blank" href="show_request" style="background-color: #008E89; color:white;">Look for an opportunity </a>
 
                     </div>
                   </div>
@@ -232,7 +258,7 @@
               @endif
 
 
-              <a class="btn btn-info " target="__blank" href="show_request">Look for an opportunity </a>
+              <!-- <a class="btn  " target="__blank" href="show_request">Look for an opportunity </a> -->
           
            
             

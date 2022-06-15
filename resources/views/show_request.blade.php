@@ -31,16 +31,23 @@ img {
 
 }
 
+
+.btn
+{
+    margin: 8%;
+    background-color: #008E89;
+}
+
     </style>
 
 <div class="page-header"style="background-color: #008E89; padding: 90px 0 40px 0;"  >
     <div class="container" >
         <div class="row">
             <div class="col-12">
-                <h2>About Us</h2>
+                <h2>Requests Page</h2>
             </div>
             <div class="col-12">
-                <a href="">Volunteer Page</a>
+                <h1 class="page_title">Requests Page</h1>
             </div>
         </div>
 </div>
@@ -48,18 +55,16 @@ img {
 
 
 
-<div class="container p-5 d-flex flex-row justify-content-around flex-wrap">
-    
-  
-    
+<div class="container ">
+  <div class="row d-flex justify-content-between ">  
   @foreach($view2 as $data) 
-  <div class="d-flex flex-row justify-content-around flex-wrap">
-  <div class="card mt-5">
+  
+  <div class="card  mt-5 ">
         
 
         <div class="mt-5">
             <div>
-                <div style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><img src="https://www.manufacturingusa.com/sites/manufacturingusa.com/files/default.png" width="300px"></div>
+                <div style="width: 50%" aria-valuepnow="50" aria-valuemin="0" aria-valuemax="100"><img src="img/{{$data->img}}" width="300px"></div>
             </div>
             
             <div class="mt-3"style="text-align:center"> Name :{{$data->name}}</div>
@@ -68,19 +73,17 @@ img {
             <div class="mt-3"style="text-align:center">Location :{{$data->location}}</div>
             <div class="mt-3"style="text-align:center">Phone :{{$data->phone_num}}</div>
             <div class="mt-3"style="text-align:center">Needed_Services :{{$data->needed_services}}</div>
-            <div class="mt-3"style="text-align:center">Time_Needed :{{$data->    time_needed}}</div>
+            <div class="mt-3"style="text-align:center">Time_Needed :{{$data->time_needed}}</div>
 
         </div>
-        <a href="accept_request/id/{{Auth::user()->id}}/{{$data->elder_id}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Accept</a>
+        <a href="accept_request/id/{{Auth::user()->id}}/{{$data->elder_id}}" class="btn  btn-lg active" role="button" aria-pressed="true">Accept</a>
         </div>
-</div>
-</div>
 
-</div>
-</div>
+
+
 @endforeach
-
-
-
 </div>
+</div>
+</div>
+
 @endsection

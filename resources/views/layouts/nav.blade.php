@@ -25,6 +25,55 @@
 
         <!-- Template Stylesheet -->
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
+        <style>
+            .carousel .carousel-img::after , .facts
+            {
+                background: rgba(0, 0, 0, 0.648);
+            }
+
+            .navbar.nav-sticky
+            {
+                padding: 0px 60px;
+            }
+            .btn_carousel
+            {
+                width: 250px;
+                
+            }
+
+            .page_title
+{
+    font-weight: bolder;
+    color: white;
+}
+.nav_bar_margin
+{
+    margin-left: 30%;
+
+}
+@media only screen and (max-width: 800px)
+{
+    .nav_bar_margin
+    {
+        margin-left: 5%;
+
+
+    }
+    
+}
+
+@media only screen and (max-width: 400px)
+{
+    .nav_bar_margin
+    {
+        margin-left: 0px;
+
+
+    }
+    
+
+}
+        </style>
     </head>
 
     <body>
@@ -33,16 +82,17 @@
         <!-- Nav Bar Start -->
         
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            
             <div class="container-fluid">
-                <img src="{{asset('img/logo2.png')}}" height="90px" width="70px" alt="logo" style="margin:10px">
-              
-                <a class="nav-item nav-link" href="/">Home</a>
-                
+                <img src="{{asset('img/logo2.png')}}" height="80px" width="70px" alt="logo" style="margin:10px">
+              <div class="row d-flex justify-content-end nav_bar_margin">
+                       <a class="nav-item nav-link nav_buttons" href="/">Home</a>
                         <a href="/About" class="nav-item nav-link">About</a>
                         <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
                         <a href="/Contactus" class="nav-item nav-link">Contact</a>
                         <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
                         <a href="request" class="nav-item nav-link">Apply</a>
+</div>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                   
